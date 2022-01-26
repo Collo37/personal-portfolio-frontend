@@ -1,0 +1,57 @@
+.button {
+  width: 150px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+#button-svg {
+  fill: transparent;
+}
+
+#button-svg,
+.rectangle,
+.rectangle-filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rectangle {
+  stroke-width: 2;
+  transition-duration: 1s;
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500, 500;
+}
+
+.rectangle-filled {
+  transition: 1s;
+  stroke-width: 2;
+  stroke-dashoffset: 500;
+  stroke-dasharray: 500, 500;
+}
+
+.button:hover .rectangle {
+  stroke-dashoffset: 0;
+}
+
+.button:hover .rectangle-filled {
+  fill: transparent;
+  stroke-dashoffset: 0;
+}
+
+.button:hover.button p {
+  color: #fc7a1e;
+}
+
+.button p {
+  color: #fc7a1e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}

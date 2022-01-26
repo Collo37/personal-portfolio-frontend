@@ -1,0 +1,98 @@
+.landing-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.landing-section-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.landing-section-right {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  padding-right: 10px;
+}
+
+.floating-item {
+  min-width: 250px;
+  max-width: 400px;
+  margin-bottom: 10px;
+  height: fit-content;
+  overflow: hidden;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+}
+
+.home-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.home-title h3 {
+  left: 5px;
+  top: 5px;
+}
+
+#home-title-name {
+  width: 160px;
+}
+
+#home-title-name text {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.name,
+.home-subtitle {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.name > p {
+  font-size: 34px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.home-subtitle {
+  margin-top: 30px;
+}
+
+#home-title-name,
+.home-subtitle svg {
+  height: 50px;
+  margin: 0;
+}
+
+.home-subtitle svg text {
+  font-size: 35px;
+  font-weight: 700;
+  stroke-dasharray: 500, 500;
+  stroke-dashoffset: 500;
+  font-family: "poppins", sans-serif;
+}
